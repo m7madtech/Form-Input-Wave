@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
+    font-family: 'Muli', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +18,7 @@ body {
         justify-content: center;
         align-items: center;
         background-color: rgba(0, 0, 0, 0.4);
-        height: 420px;
+        height: 440px;
         width: 390px;
         position: relative;
         border: none;
@@ -23,7 +26,7 @@ body {
 
         h1 {
             color: white;
-            font-size: 35px;
+            font-size: 30px;
             font-weight: 800;
         }
 
@@ -33,8 +36,29 @@ body {
             border-bottom: 3px solid white;
             height: 50px;
             color: white;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
             background-color: rgba(0, 0, 0, 0);
+        }
+
+        label {
+            color: white;
+            font-size: 18px;
+        }
+
+        #email{
+            position: absolute;
+            top:130px;
+            left: 40px;
+        }
+
+        #pass{
+            position: absolute;
+            top: 215px;
+            left: 40px;
+        }
+
+        input:focus {
+            outline: 0;
         }
 
         button {
@@ -46,10 +70,12 @@ body {
             border-radius: 4px;
             cursor: pointer;
             background-color: lightblue;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            font-family: inherit;
         }
 
-        h3 {
+        p {
+            font-weight: 10px;
             color: white;
             align-self: normal;
             margin-left: 40px;
