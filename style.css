@@ -15,8 +15,8 @@ body {
         justify-content: center;
         align-items: center;
         background-color: rgba(0, 0, 0, 0.4);
-        height: 60vh;
-        width: 30vw;
+        height: 420px;
+        width: 390px;
         position: relative;
         border: none;
         border-radius: 3px;
@@ -51,7 +51,12 @@ body {
 
         h3 {
             color: white;
-
+            align-self: normal;
+            margin-left: 40px;
+            a{
+                text-decoration: none;
+                color:lightblue;
+            }
         }
     }
 }
