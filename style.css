@@ -38,11 +38,13 @@ body {
             color: white;
             margin-bottom: 35px;
             background-color: rgba(0, 0, 0, 0);
+            font-size: 16px;
         }
 
         label {
             color: white;
             font-size: 18px;
+            pointer-events: none;
         }
 
         #email{
@@ -74,6 +76,10 @@ body {
             font-family: inherit;
         }
 
+        button:active {
+            transform: scale(0.98);
+        }
+
         p {
             font-weight: 10px;
             color: white;
@@ -85,4 +91,17 @@ body {
             }
         }
     }
+}
+
+label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+input:focus + label span,
+input:valid + label span {
+    color: lightblue;
+    transform: translateY(-30px);
 }
